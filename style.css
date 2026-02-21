@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5e6d3;
+}
+
+header {
+    background-color: #8b3a2e;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #8b3a2e;
+    border-bottom: 3px solid #8b3a2e;
+    display: inline-block;
+}
+
+.abstract, .introduction, .methodology {
+    background: #fff8ee;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.results {
+    background: #e6d5b8;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 6px solid #8b3a2e;
+    border-radius: 8px;
+}
+
+footer {
+    background: #8b3a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
