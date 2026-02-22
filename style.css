@@ -97,3 +97,22 @@ p {
     margin-bottom: 18px;
     hyphens: auto;
 }
+
+p {
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    p {
+        text-align: left;   /* mobilon NEM justify */
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+}
