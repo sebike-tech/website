@@ -1,4 +1,4 @@
-/*body {
+body {
     margin: 0;
     font-family: 'Georgia', serif;
     background: linear-gradient(180deg, #e9f1e7 0%, #f6f3ec 100%);
@@ -91,9 +91,9 @@ p {
     margin: 25px 0;
     font-style: italic;
 }
-*/
+
 /* Eredmény kártyák */
-/*
+
 .card {
     background: linear-gradient(135deg, #ffffff, #f4f1ea);
     border-left: 6px solid #4a7c59;
@@ -161,7 +161,7 @@ h1::after, h2::after {
 .shape2 {
     animation: float 10s ease-in-out infinite;
 }
-*/
+
 
 
 
