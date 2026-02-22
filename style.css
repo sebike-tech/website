@@ -30,13 +30,19 @@ body {
 
 section {
     max-width: 850px;
-    margin: 40px auto;
-    padding: 35px;
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(14px);
+    border-radius: 24px;
+    box-shadow: 
+        0 20px 60px rgba(0,0,0,0.08),
+        0 4px 10px rgba(0,0,0,0.05);
     position: relative;
+    transition: transform 0.3s ease;
+}
+section:hover {
+    transform: translateY(-5px);
 }
 
 .sticker {
@@ -88,36 +94,69 @@ p {
 
 /* Eredmény kártyák */
 .card {
-    background: #f9f6ef;
+    background: linear-gradient(135deg, #ffffff, #f4f1ea);
     border-left: 6px solid #4a7c59;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 2px solid #2f5d3a;
-}
-
-th, td {
-    padding: 12px;
-    font-size: 16px;
-    text-align: center;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
 th {
-    background-color: #4a7c59;
+    background: linear-gradient(90deg, #4a7c59, #6b8e23);
     color: white;
+    font-weight: 600;
 }
 
-tr:nth-child(even) {
-    background-color: #f4f1ea;
+td {
+    background: #ffffff;
 }
 
+tr:hover td {
+    background: #eef6ea;
+    transition: 0.2s;
+}
 
+h1, h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h1::after, h2::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 6px;
+    background: linear-gradient(90deg, #6b8e23, #b7d3b0);
+    border-radius: 50px;
+    margin-top: 8px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0px); }
+}
+
+.shape1 {
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape2 {
+    animation: float 10s ease-in-out infinite;
+}
