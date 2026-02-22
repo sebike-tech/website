@@ -116,3 +116,10 @@ p {
         margin: 20px 10px;
     }
 }
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(180deg, #e9f1e7 0%, #f6f3ec 100%);
+    overflow-x: hidden;
+}
