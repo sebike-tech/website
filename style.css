@@ -148,24 +148,24 @@ body::after {
 @media (max-width: 768px) {
 
     body {
-        font-size: 18px !important;
+        font-size: 28px !important;
     }
 
     header h1 {
-        font-size: 40px !important;
+        font-size: 50px !important;
     }
 
     h2 {
-        font-size: 24px !important;
+        font-size: 34px !important;
     }
 
     p {
-        font-size: 17px !important;
+        font-size: 27px !important;
         line-height: 1.8 !important;
     }
 
     th, td {
-        font-size: 17px !important;
+        font-size: 27px !important;
     }
 
 }
