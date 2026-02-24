@@ -145,7 +145,21 @@ body::after {
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 112%;
+
+    body {
+        font-size: 1.15em;
     }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    th, td {
+        font-size: 18px;
+    }
+
 }
